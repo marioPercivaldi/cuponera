@@ -1,18 +1,18 @@
-[project]
+[tool.poetry]
 name = "mockcupon"
 version = "0.1.0"
-description = "Web app mock del proyecto cuponera turistica"
-authors = [
-    {name = "Mario Percivaldi & Nico Bes"}
-]
-license = {text = "GNU"}
+description = "Web app mock del proyecto cuponera turística"
+authors = ["Mario Percivaldi", "Nico Bes"]
 readme = "README.md"
-requires-python = ">=3.12,<3.13
-dependencies = [
-    "flask (>=3.1.2,<4.0.0)",
-    "jsonify (>=0.5,<0.6)"
-]
+license = "GPL-3.0-or-later"
 
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+flask = "^3.0"
+gunicorn = "^22.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
