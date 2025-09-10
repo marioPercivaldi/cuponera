@@ -1,0 +1,19 @@
+[project]
+name = "mockcupon"
+version = "0.1.0"
+description = "Web app mock del proyecto cuponera turistica"
+authors = [
+    {name = "Mario Percivaldi & Nico Bes"}
+]
+license = {text = "GNU"}
+readme = "README.md"
+requires-python = "^3.12.7"
+dependencies = [
+    "flask (>=3.1.2,<4.0.0)",
+    "jsonify (>=0.5,<0.6)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
