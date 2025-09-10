@@ -1,5 +1,5 @@
 # ---- Python + Poetry + Gunicorn ----
-FROM python:3.12.17-slim AS runtime
+FROM python:3.12-slim AS runtime
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONDONTWRITEBYTECODE=1 \
